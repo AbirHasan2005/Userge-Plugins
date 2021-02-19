@@ -37,7 +37,7 @@ async def IPLookUpTool(message: Message):
     gmap_lock = "https://www.google.fr/maps?q="+localisation
 
     await message.edit(
-        text=f"Here details of `{ip}`\n\n**Host:** `{HOST_name}`\n**ISP:** `{ISP_value}`\n**Organisation:** `{org_value}`\n**Region:** `{region_value}`\n**Continent:** `{continent_value}`\n**IP Type:** `{IP_Type}`\n**City:** `{city_value}`\n**Location:** `{localisation}`\n**Google Map:** {gmap_lock}",
+        text=f"Here details of `{ip_address}`\n\n**Host:** `{HOST_name}`\n**ISP:** `{ISP_value}`\n**Organisation:** `{org_value}`\n**Region:** `{region_value}`\n**Continent:** `{continent_value}`\n**IP Type:** `{IP_Type}`\n**City:** `{city_value}`\n**Location:** `{localisation}`\n**Google Map:** {gmap_lock}",
         disable_web_page_preview=True,
         parse_mode="Markdown"
     )
